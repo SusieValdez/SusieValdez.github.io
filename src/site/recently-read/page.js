@@ -1,4 +1,3 @@
-// THIS FILE IS GENERATED. DO NOT ALTER. EDIT THE CONTENTS IN src\site\recently-read\page.js
 const bardItem = (obj) =>
   `<div class='bard-item'>
     <a href="${obj.link}">${obj.title}</a>
