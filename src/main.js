@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs-extra";
 import path from "path";
 
 const INDENT_SZIE = 2;
@@ -27,6 +27,7 @@ const indent = (lines, indentSize = 2, n = 1) =>
     .join(`\n`);
 
 async function buildSite() {
+  fs.rmSync(DESTINATION_SITE_DIR, { recursive: true, force: true });
   const templateHtml = fs.readFileSync("src/" + TEMPLATE_HTML).toString();
   for await (const filePath of walk(SOURCE_SITE_DIR)) {
     const contents = fs.readFileSync(filePath).toString();
@@ -68,7 +69,7 @@ async function buildSite() {
     }
 
     console.log(`Writing: ${newFilePath}`);
-    fs.writeFileSync(newFilePath, newPageContents);
+    fs.outputFileSync(newFilePath, newPageContents);
   }
 }
 
