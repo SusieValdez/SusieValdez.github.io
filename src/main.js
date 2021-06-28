@@ -2,7 +2,7 @@ import fs from "fs-extra";
 import path from "path";
 
 const INDENT_SZIE = 2;
-const NUM_INDENTS = 4; // Depenendent on the number of indents in the wrapping div in TEMPLATE_HTML
+const NUM_INDENTS = 3; // Depenendent on the number of indents in the wrapping div in TEMPLATE_HTML
 const TEMPLATE_HTML = "site-template.html";
 const SOURCE_SITE_DIR = "src/site";
 const DESTINATION_SITE_DIR = "docs";
