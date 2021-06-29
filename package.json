@@ -1,5 +1,9 @@
 {
   "type": "module",
+  "scripts": {
+    "build": "node ./src/main.js",
+    "dev": "nodemon -x \"npm run build\" --ignore docs -e js,html,css,json"
+  },
   "devDependencies": {
     "fs-extra": "^10.0.0"
   }
