@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "build": "node ./src/main.js",
-    "dev": "nodemon -x \"npm run build\" --ignore docs -e js,html,css,json"
+    "dev": "nodemon -e * --ignore docs -x \"npm run build\""
   },
   "devDependencies": {
     "fs-extra": "^10.0.0"
