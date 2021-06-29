@@ -37,6 +37,7 @@ async function buildSite() {
     );
 
     let newPageContents;
+    let shouldCopy = false;
     switch (path.extname(filePath)) {
       case ".html": {
         newPageContents =
@@ -63,13 +64,23 @@ async function buildSite() {
         break;
       }
       default: {
-        newPageContents = contents;
+        shouldCopy = true;
         break;
       }
     }
 
     console.log(`Writing: ${newFilePath}`);
-    fs.outputFileSync(newFilePath, newPageContents);
+    if (shouldCopy) {
+      const dir = path.dirname(newFilePath);
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, {
+          recursive: true,
+        });
+      }
+      fs.copyFileSync(filePath, newFilePath);
+    } else {
+      fs.outputFileSync(newFilePath, newPageContents);
+    }
   }
 }
 
