@@ -1,4 +1,93 @@
-body {
-  padding-top: 4.5rem; /* For navbar at top */
+:root {
+  --light-yellow: #cff09e;
+  --light-green: #a8dba8;
+  --medium-green: #79bd9a;
+  --blue: #3b8686;
+  --dark-blue: #0b486b;
 }
 
+.a {
+  color: #e7484f;
+}
+.b {
+  color: #f68b1d;
+}
+.c {
+  color: #fced00;
+}
+.d {
+  color: #009e4f;
+}
+.e {
+  color: #00aac3;
+}
+.f {
+  color: #732982;
+}
+
+body {
+  padding-top: 4.5rem; /* For navbar at top */
+  background-color: var(--medium-green);
+}
+
+.navbar {
+  background-color: var(--dark-blue);
+}
+
+.rainbow {
+  background-color: #343a40;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.btn {
+  background-color: var(--blue);
+}
+
+.rainbow-5:hover {
+  background-image: linear-gradient(
+    to right,
+    #e7484f,
+    #e7484f 16.65%,
+    #f68b1d 16.65%,
+    #f68b1d 33.3%,
+    #fced00 33.3%,
+    #fced00 49.95%,
+    #009e4f 49.95%,
+    #009e4f 66.6%,
+    #00aac3 66.6%,
+    #00aac3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #e7484f 100%
+  );
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+.follow {
+  margin-top: 40px;
+}
+
+.follow a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.header-custom {
+  background-color: var(--blue);
+  border: 3px solid white;
+}
+
+.card {
+  background-color: var(--light-green);
+  border: 3px solid white;
+}
