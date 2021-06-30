@@ -45,6 +45,7 @@ body {
 
 .btn {
   background-color: var(--blue);
+  color: white;
 }
 
 .rainbow-5:hover {
