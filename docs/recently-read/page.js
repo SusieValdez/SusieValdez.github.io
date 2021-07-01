@@ -8,6 +8,13 @@ const PLACEHOLDER_IMAGES = [
 
 const TITLE_CUTOFF = 50;
 
+const processDate = (date) => {
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  return `${day}/${month}/${year}`;
+};
+
 const bardItem = (obj) => {
   const title =
     obj.title.length > TITLE_CUTOFF
@@ -16,11 +23,16 @@ const bardItem = (obj) => {
   const image =
     obj.image ||
     PLACEHOLDER_IMAGES[Math.floor(Math.random() * PLACEHOLDER_IMAGES.length)];
+
+  const timestampDate = new Date(obj.timestamp);
+  const addedAt = processDate(timestampDate);
+
   return `<div class="col">
             <div class="card h-100">
               <img class="card-img-top" src="${image}" alt="Card image cap">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${title}</h5>
+                <p class="card-text"><small class="text-muted">Added: ${addedAt}</small></p>
                 <p class="card-text">
                   ${obj.description}
                 </p>
