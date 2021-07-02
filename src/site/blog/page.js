@@ -10,7 +10,7 @@ const singleBlogPost = (post) => {
 
 const blogPost = (post) => {
   return `<div class="col mb-4">
-  <div class="card h-100">
+  <div class="card h-100"><img class="card-img"
     <div class="card-body d-flex flex-column">
       <h5 class="card-title">${post.title}</h5>
       <p class="card-text">

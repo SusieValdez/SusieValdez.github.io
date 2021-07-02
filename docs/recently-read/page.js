@@ -4,6 +4,8 @@ const PLACEHOLDER_IMAGES = [
   "https://sm.ign.com/t/ign_latam/screenshot/default/sailor-moon-teorias-locas_krsb.1280.jpg",
   "https://i.pinimg.com/originals/ae/7c/02/ae7c02c34c4f85b8b7706b76814fac4e.png",
   "https://dg31sz3gwrwan.cloudfront.net/screen/286949/1_iphone.jpg",
+  "https://i1.wp.com/www.bitme.gg/wp-content/uploads/2021/02/Ranma-1_2_-Todos-los-personajes-que-tienen-una-maldicion-en-la-serie-1.jpg?resize=1280%2C720&ssl=1",
+  "",
 ];
 
 const TITLE_CUTOFF = 50;
@@ -28,7 +30,7 @@ const bardItem = (obj) => {
   const addedAt = processDate(timestampDate);
 
   return `<div class="col">
-            <div class="card h-100">
+            <div class="card h-100 " >
               <img class="card-img-top" src="${image}" alt="Card image cap">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${title}</h5>

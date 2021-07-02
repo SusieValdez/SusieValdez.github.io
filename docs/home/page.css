@@ -1,0 +1,40 @@
+/* THIS FILE IS GENERATED. DO NOT ALTER. EDIT THE CONTENTS IN src\site\home\page.css */
+@font-face {
+  font-family: "bogart";
+  src: url(../assets/fonts/Bogart-Bold-trial.ttf);
+  font-style: bold;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../assets/fonts/Poppins-Light.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.about-me {
+  padding: 7% 15%;
+}
+
+.header-intro {
+  font-family: "bogart";
+  font-size: 4.5rem;
+  letter-spacing: 1.5px;
+  line-height: 110%;
+}
+
+.sub-header {
+  font-family: "poppins";
+  font-size: 2rem;
+}
+
+.white-section {
+  background-color: var(--light-yellow);
+}
+
+.info-title {
+  font-family: "bogart";
+  letter-spacing: 1.5px;
+  line-height: 150%;
+}

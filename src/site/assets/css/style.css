@@ -92,3 +92,7 @@ body {
   background-color: var(--light-green);
   border: 3px solid white;
 }
+
+.card-img-bg {
+  background-image: url("/assets/images/card-bg.png");
+}
