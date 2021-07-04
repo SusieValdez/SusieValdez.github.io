@@ -44,7 +44,7 @@ const bardItem = (obj) => {
 };
 
 const recentlyReadItemsEl = document.getElementById("bard-items");
-fetch("https://raw.githubusercontent.com/SusieHatter/bard/main/items.json")
+fetch(`${BASE_URL}/data/recently-read.json`)
   .then((res) => res.json())
   .then((items) => `${items.map(bardItem).join("\n")}`)
   .then((html) => (recentlyReadItemsEl.innerHTML = html));
