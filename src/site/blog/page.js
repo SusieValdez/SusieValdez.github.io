@@ -1,3 +1,5 @@
+import { BARD_BASE_URL } from "../assets/js/common.js";
+
 const POST_PREVIEW_LENGTH = 400;
 
 const postsList = (posts) =>
@@ -26,12 +28,14 @@ const blogPost = (post) => {
 };
 
 const fetchPosts = async () =>
-  await fetch(`${BASE_URL}/data/blog-posts.json`).then((res) => res.json());
+  await fetch(`${BARD_BASE_URL}/data/blog-posts.json`).then((res) =>
+    res.json()
+  );
 
 const fetchPageTexts = async (slugs) =>
   await Promise.all(
     slugs.map((slug) =>
-      fetch(`${BASE_URL}/posts/${slug}.md`).then((res) => res.text())
+      fetch(`${BARD_BASE_URL}/posts/${slug}.md`).then((res) => res.text())
     )
   );
 
@@ -61,21 +65,29 @@ const parsePostTexts = (postTexts, slugs) => {
   return posts;
 };
 
-(async () => {
-  const slugs = await fetchPosts();
-  const postTexts = await fetchPageTexts(slugs);
-  const posts = parsePostTexts(postTexts, slugs);
-  const blogEl = document.getElementById("blog");
+const buildPage = (posts) => {
   const postSlug = new URL(document.location).searchParams.get("p");
   if (postSlug === null) {
-    blogEl.innerHTML = postsList(Object.values(posts));
+    return { html: postsList(Object.values(posts)), title: "SusieHatter" };
   } else {
     const post = posts[postSlug];
     if (post === undefined) {
-      document.location = "/";
       return;
     }
-    blogEl.innerHTML = singleBlogPost(post);
-    document.title = `${post.title} | SusieHatter`;
+    return {
+      html: singleBlogPost(post),
+      title: `${post.title} | SusieHatter`,
+    };
   }
-})();
+};
+
+const slugs = await fetchPosts();
+const postTexts = await fetchPageTexts(slugs);
+const posts = parsePostTexts(postTexts, slugs);
+const page = buildPage(posts);
+if (page === undefined) {
+  document.location = "/";
+} else {
+  document.getElementById("blog").innerHTML = page.html;
+  document.title = page.title;
+}

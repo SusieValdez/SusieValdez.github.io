@@ -1,3 +1,5 @@
+import { BARD_BASE_URL } from "../assets/js/common.js";
+
 const PLACEHOLDER_IMAGES = [
   "https://netjoven.s3-us-west-1.amazonaws.com/_files/12/25/12255Oqu.jpg",
   "https://sm.ign.com/t/ign_latam/screenshot/default/sailor-moon-teorias-locas_krsb.1280.jpg",
@@ -43,8 +45,9 @@ const bardItem = (obj) => {
           </div>`;
 };
 
-const recentlyReadItemsEl = document.getElementById("bard-items");
-fetch(`${BASE_URL}/data/recently-read.json`)
-  .then((res) => res.json())
-  .then((items) => `${items.map(bardItem).join("\n")}`)
-  .then((html) => (recentlyReadItemsEl.innerHTML = html));
+const fetchRecentlyReadItems = (async) =>
+  fetch(`${BARD_BASE_URL}/data/recently-read.json`).then((res) => res.json());
+
+const items = await fetchRecentlyReadItems();
+const html = items.map(bardItem).join("\n");
+document.getElementById("bard-items").innerHTML = html;
