@@ -1,46 +1,35 @@
 /* THIS FILE IS GENERATED. DO NOT ALTER. EDIT THE CONTENTS IN src\site\assets\css\style.css */
-:root {
-  --light-yellow: #cff09e;
-  --light-green: #a8dba8;
-  --medium-green: #79bd9a;
-  --blue: #3b8686;
-  --dark-blue: #0b486b;
+@font-face {
+  font-family: "questrial";
+  src: url(../fonts/Questrial-regular.ttf);
+  font-style: normal;
+  font-weight: 500;
 }
 
-.a {
-  color: #e7484f;
+@font-face {
+  font-family: "bebas";
+  src: url(../fonts/BebasNeue-regular.ttf);
+  font-style: bold;
+  font-weight: 500;
 }
-.b {
-  color: #f68b1d;
+
+@font-face {
+  font-family: "satisfy";
+  src: url(../fonts/Satisfy-regular.ttf);
+  font-style: normal;
+  font-weight: 500;
 }
-.c {
-  color: #fced00;
-}
-.d {
-  color: #009e4f;
-}
-.e {
-  color: #00aac3;
-}
-.f {
-  color: #732982;
+
+:root {
+  --blue: #5ce1e6;
 }
 
 body {
-  padding-top: 4.5rem; /* For navbar at top */
-  background-color: var(--medium-green);
+  padding-top: 53px; /* For navbar at top */
 }
 
 .navbar {
-  background-color: var(--dark-blue);
-}
-
-.rainbow {
-  background-color: #343a40;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 16px;
+  background-color: rgb(29, 29, 29);
 }
 
 .btn {
@@ -48,7 +37,12 @@ body {
   color: white;
 }
 
-.rainbow-5:hover {
+.card {
+  background-color: white;
+  color: black;
+}
+
+.btn:hover {
   background-image: linear-gradient(
     to right,
     #e7484f,
@@ -72,24 +66,4 @@ body {
   to {
     background-position: 20vw;
   }
-}
-
-.follow {
-  margin-top: 40px;
-}
-
-.follow a {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.header-custom {
-  background-color: var(--blue);
-  border: 3px solid white;
-}
-
-.card {
-  background-color: var(--light-green);
-  border: 3px solid white;
 }

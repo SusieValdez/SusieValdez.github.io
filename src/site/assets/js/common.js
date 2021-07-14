@@ -15,7 +15,7 @@ const PLACEHOLDER_IMAGES = [
   "https://wallpaperaccess.com/full/2165199.jpg",
 ];
 
-export const getRandomPlaceholderImage = () => "https://picsum.photos/320/180";
+export const getRandomPlaceholderImage = () => "https://picsum.photos/800/450";
 // PLACEHOLDER_IMAGES[Math.floor(Math.random() * PLACEHOLDER_IMAGES.length)];
 
 export const sliceWithSuffix = (str, length, suffix) =>

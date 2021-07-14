@@ -14,19 +14,20 @@ const bardItem = (obj) => {
   const timestampDate = new Date(obj.timestamp);
   const addedAt = formatDate(timestampDate);
 
-  return `<div class="col">
-            <div class="card h-100 " >
-              <img class="card-img-top" src="${image}" alt="Card image cap">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">${title}</h5>
-                <p class="card-text"><small class="text-muted">Added: ${addedAt}</small></p>
-                <p class="card-text">
-                  ${obj.description}
-                </p>
-                <a href="${obj.link}" class="btn rainbow-5 mt-auto">Read it here</a>
-              </div>
-            </div>
-          </div>`;
+  return `
+    <div class="col">
+      <div class="card h-100 " >
+        <img class="card-img-top" src="${image}" alt="Card image cap">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${title}</h5>
+          <p class="card-text"><small class="text-muted">Added: ${addedAt}</small></p>
+          <p class="card-text">
+            ${obj.description}
+          </p>
+          <a href="${obj.link}" class="btn mt-auto">Read it here</a>
+        </div>
+      </div>
+    </div>`;
 };
 
 const fetchRecentlyReadItems = (async) =>

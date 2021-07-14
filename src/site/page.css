@@ -1,39 +1,37 @@
-@font-face {
-  font-family: "bogart";
-  src: url(../assets/fonts/Bogart-Bold-trial.ttf);
-  font-style: bold;
-  font-weight: 500;
+#intro {
+  background-color: black;
+  color: white;
 }
 
-@font-face {
-  font-family: "poppins";
-  src: url(../assets/fonts/Poppins-Light.ttf);
-  font-style: normal;
-  font-weight: 500;
+#projects {
+  background-color: white;
+  color: black;
 }
 
-.about-me {
-  padding: 7% 15%;
+#intro {
+  font-size: 2rem;
+  font-family: "questrial";
 }
 
-.header-intro {
-  font-family: "bogart";
-  font-size: 4.5rem;
-  letter-spacing: 1.5px;
-  line-height: 110%;
+#intro h1 {
+  font-family: "satisfy";
+  font-size: 15vw;
 }
 
-.sub-header {
-  font-family: "poppins";
+#intro h6 {
   font-size: 2rem;
 }
 
-.white-section {
-  background-color: var(--light-yellow);
-}
+@media only screen and (max-width: 450px) {
+  #intro {
+    font-size: 1rem;
+  }
 
-.info-title {
-  font-family: "bogart";
-  letter-spacing: 1.5px;
-  line-height: 150%;
+  #intro h1 {
+    font-size: 20vw;
+  }
+
+  #intro h6 {
+    font-size: 1rem;
+  }
 }

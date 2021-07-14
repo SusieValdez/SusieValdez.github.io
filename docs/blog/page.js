@@ -22,7 +22,7 @@ const blogPost = (post) => {
             marked(post.body).slice(0, POST_PREVIEW_LENGTH) + "..."
           )}
         </p>
-        <a href="?p=${post.slug}" class="btn rainbow-5">Read it here</a>
+        <a href="?p=${post.slug}" class="btn">Read it here</a>
       </div>
     </div>
     `;
@@ -69,7 +69,7 @@ const parsePostTexts = (postTexts, slugs) => {
 const buildPage = (posts) => {
   const postSlug = new URL(document.location).searchParams.get("p");
   if (postSlug === null) {
-    return { html: postsList(Object.values(posts)), title: "SusieHatter" };
+    return { html: postsList(Object.values(posts)), title: "Susie Valdez" };
   } else {
     const post = posts[postSlug];
     if (post === undefined) {
@@ -77,7 +77,7 @@ const buildPage = (posts) => {
     }
     return {
       html: singleBlogPost(post),
-      title: `${post.title} | SusieHatter`,
+      title: `${post.title} | Susie Valdez`,
     };
   }
 };

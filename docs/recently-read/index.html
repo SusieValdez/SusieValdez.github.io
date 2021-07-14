@@ -9,12 +9,16 @@
       content="width=device-width, initial-scale=1.0"
       shrink-to-fit="no"
     />
-    <title>SusieHatter</title>
+    <title>Susie Valdez</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="./page.css" />
@@ -52,38 +56,38 @@
         </div>
       </div>
     </nav>
-    <main class="flex-shrink-0 mb-5">
-      <div class="container">
-      <div class="p-4 p-md-5 mb-4 text-white rounded header-custom">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-4 fst-italic">Recently read!</h1>
-            <p class="lead my-3">
-              In this section I share some of the articles that I found interesting
-              and worth sharing. In my blog section you might find my thoughts and
-              opinions about them too!
-            </p>
-          </div>
-          <div
-            class="
-              col-8 col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-3
-              offset-2 offset-sm-3 offset-md-0 offset-lg-1
-            "
-          >
-            <img
-              src="/assets/images/susixel.png"
-              class="img-fluid float-end"
-              alt="susie-photo"
-            />
+    
+      <div class="container-fluid pt-5">
+        <div class="p-4 p-md-5 mb-4 rounded susie-header">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="display-4 fst-italic">Recently read!</h1>
+              <p class="lead my-3">
+                In this section I share some of the articles that I found interesting
+                and worth sharing. In my blog section you might find my thoughts and
+                opinions about them too!
+              </p>
+            </div>
+            <div
+              class="
+                col-8 col-sm-6 col-md-6 col-lg-5 col-xl-4 col-xxl-3
+                offset-2 offset-sm-3 offset-md-0 offset-lg-1
+              "
+            >
+              <img
+                src="/assets/images/susixel.png"
+                class="img-fluid float-end"
+                alt="susie-photo"
+              />
+            </div>
           </div>
         </div>
+        <div
+          id="bard-items"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4"
+        ></div>
       </div>
-      <div
-        id="bard-items"
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4"
-      ></div>
-    </div>
-    </main>
+    
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
         <a href="#">Twitter</a>

@@ -8,7 +8,7 @@ import {
 const reposUrl =
   "https://api.github.com/users/Susiehatter/repos?sort=created_at";
 
-const repoImage = (repoName) =>
+export const repoImage = (repoName) =>
   `https://raw.githubusercontent.com/SusieHatter/${repoName}/main/screenshot.png`;
 
 const repoHtml = (repo) =>
@@ -47,7 +47,8 @@ const reposHtml = (repos) =>
       .join("\n")}
   </div>`;
 
-const fetchRepos = async () => await fetch(reposUrl).then((res) => res.json());
+export const fetchRepos = async () =>
+  await fetch(reposUrl).then((res) => res.json());
 
 const repos = await fetchRepos();
 const html = reposHtml(repos);
