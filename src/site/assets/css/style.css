@@ -1,23 +1,5 @@
-@font-face {
-  font-family: "questrial";
-  src: url("/assets/fonts/Questrial-regular.ttf");
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "bebas";
-  src: url("/assets/fonts/BebasNeue-regular.ttf");
-  font-style: bold;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "satisfy";
-  src: url("/assets/fonts/Satisfy-regular.ttf");
-  font-style: normal;
-  font-weight: 500;
-}
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 :root {
   --blue: #5ce1e6;
