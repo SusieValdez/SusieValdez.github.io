@@ -1,20 +1,20 @@
 @font-face {
   font-family: "questrial";
-  src: url(../fonts/Questrial-regular.ttf);
+  src: url("/assets/fonts/Questrial-regular.ttf");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "bebas";
-  src: url(../fonts/BebasNeue-regular.ttf);
+  src: url("/assets/fonts/BebasNeue-regular.ttf");
   font-style: bold;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "satisfy";
-  src: url(../fonts/Satisfy-regular.ttf);
+  src: url("/assets/fonts/Satisfy-regular.ttf");
   font-style: normal;
   font-weight: 500;
 }
