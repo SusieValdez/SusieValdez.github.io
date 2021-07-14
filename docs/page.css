@@ -1,15 +1,17 @@
 /* THIS FILE IS GENERATED. DO NOT ALTER. EDIT THE CONTENTS IN src\site\page.css */
+body {
+  background-color: black;
+  color: white;
+  font-family: "questrial";
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 #intro {
   background-color: black;
   color: white;
-}
-
-#projects {
-  background-color: white;
-  color: black;
-}
-
-#intro {
   font-size: 2rem;
   font-family: "questrial";
 }
@@ -21,6 +23,62 @@
 
 #intro h6 {
   font-size: 2rem;
+}
+
+#about-me {
+  background-image: url(./assets/images/monterrey.jpg);
+  background-size: auto;
+  background-position: left center;
+  color: white;
+}
+
+#my_projects {
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+}
+
+.sign {
+  font-family: "satisfy";
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.sign-child {
+  font-size: 2.5rem;
+}
+
+.projects-title {
+  font-family: "satisfy";
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+.site-links {
+  font-size: 5rem;
+  font-family: "satisfy";
+  font-weight: bold;
+}
+
+.site-links:hover {
+  animation: glitch 1s linear infinite;
+  cursor: pointer;
+}
+
+#projects .card {
+  background-color: white;
+  color: black;
+}
+
+#hobbies {
+  background-image: url(./assets/images/tea.jpg);
+  background-size: cover;
+  background-position: center top;
+  color: white;
+}
+
+#check-out p {
+  font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 450px) {
