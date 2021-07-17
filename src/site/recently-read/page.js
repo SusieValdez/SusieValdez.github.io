@@ -8,7 +8,7 @@ import {
 const TITLE_CUTOFF = 50;
 
 const bardItem = (obj) => {
-  const title = sliceWithSuffix(obj.title, TITLE_CUTOFF, "...");
+  const title = sliceWithSuffix(obj.title || "", TITLE_CUTOFF, "...");
   const image = obj.image || getRandomPlaceholderImage();
 
   const timestampDate = new Date(obj.timestamp);
@@ -30,7 +30,7 @@ const bardItem = (obj) => {
     </div>`;
 };
 
-const fetchRecentlyReadItems = (async) =>
+const fetchRecentlyReadItems = async () =>
   fetch(`${BARD_BASE_URL}/data/recently-read.json`).then((res) => res.json());
 
 const items = await fetchRecentlyReadItems();
