@@ -46,8 +46,11 @@ const reposHtml = (repos) =>
       .join("\n")}
   </div>`;
 
+const headers = {
+  Authorization: "Basic " + btoa("SusieHatter"),
+};
 export const fetchRepos = async () =>
-  await fetch(reposUrl).then((res) => res.json());
+  await fetch(reposUrl, { headers }).then((res) => res.json());
 
 const repos = await fetchRepos();
 const html = reposHtml(repos);
