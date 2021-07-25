@@ -53,7 +53,9 @@ const headers = {
 export const fetchRepos = async () =>
   await fetch(reposUrl, { headers }).then((res) => res.json());
 
-const repos = await fetchRepos();
-const html = reposHtml(repos);
-const projectsEl = document.getElementById("projects");
-projectsEl.innerHTML = html;
+(async () => {
+  const repos = await fetchRepos();
+  const html = reposHtml(repos);
+  const projectsEl = document.getElementById("projects");
+  projectsEl.innerHTML = html;
+})();

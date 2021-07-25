@@ -34,6 +34,8 @@ const bardItem = (obj) => {
 const fetchRecentlyReadItems = async () =>
   fetch(`${BARD_BASE_URL}/data/recently-read.json`).then((res) => res.json());
 
-const items = await fetchRecentlyReadItems();
-const html = items.map(bardItem).join("\n");
-document.getElementById("bard-items").innerHTML = html;
+(async () => {
+  const items = await fetchRecentlyReadItems();
+  const html = items.map(bardItem).join("\n");
+  document.getElementById("bard-items").innerHTML = html;
+})();

@@ -82,13 +82,15 @@ const buildPage = (posts) => {
   }
 };
 
-const slugs = await fetchPosts();
-const postTexts = await fetchPageTexts(slugs);
-const posts = parsePostTexts(postTexts, slugs);
-const page = buildPage(posts);
-if (page === undefined) {
-  document.location = "/";
-} else {
-  document.getElementById("blog").innerHTML = page.html;
-  document.title = page.title;
-}
+(async () => {
+  const slugs = await fetchPosts();
+  const postTexts = await fetchPageTexts(slugs);
+  const posts = parsePostTexts(postTexts, slugs);
+  const page = buildPage(posts);
+  if (page === undefined) {
+    document.location = "/";
+  } else {
+    document.getElementById("blog").innerHTML = page.html;
+    document.title = page.title;
+  }
+})();

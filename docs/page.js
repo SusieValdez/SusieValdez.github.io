@@ -39,7 +39,9 @@ const reposHtml = (repos) =>
     .map(repoHtml)
     .join("\n");
 
-const repos = await fetchRepos();
-const html = reposHtml(repos);
-const projectsEl = document.getElementById("projects");
-projectsEl.innerHTML = html;
+(async () => {
+  const repos = await fetchRepos();
+  const html = reposHtml(repos);
+  const projectsEl = document.getElementById("projects");
+  projectsEl.innerHTML = html;
+})();
