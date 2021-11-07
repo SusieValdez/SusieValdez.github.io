@@ -5,8 +5,7 @@ import {
   sliceWithSuffix,
 } from "../assets/js/common.js";
 
-const reposUrl =
-  "https://api.github.com/users/Susiehatter/repos?sort=created_at";
+const reposUrl = "https://pandora.susie.mx/github/repos";
 
 export const repoImage = (repoName) =>
   `https://raw.githubusercontent.com/SusieHatter/${repoName}/main/screenshot.png`;
@@ -47,11 +46,8 @@ const reposHtml = (repos) =>
       .join("\n")}
   </div>`;
 
-const headers = {
-  Authorization: "Basic " + btoa("SusieHatter"),
-};
 export const fetchRepos = async () =>
-  await fetch(reposUrl, { headers }).then((res) => res.json());
+  await fetch(reposUrl).then((res) => res.json());
 
 (async () => {
   const repos = await fetchRepos();
