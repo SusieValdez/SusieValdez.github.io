@@ -10,13 +10,13 @@ import Socials from "../components/Socials";
 
 const IndexPage = () => {
   return (
-    <main className="bg-gray-900 h-full">
+    <main className="bg-gray-900 h-full scroll-smooth">
       <Navbar />
       <div className="flex">
         <div className="fixed top-3/4 left-0 mx-5 h-full">
           <Socials />
         </div>
-        <div className="ml-20 mt-24 pt-12">
+        <div className="flex flex-col">
           <LandingHeader />
           <About />
           <Projects />
