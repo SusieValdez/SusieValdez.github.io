@@ -18,7 +18,7 @@ const IndexPage = () => {
         <div className="fixed top-3/4 left-0 mx-5 h-full">
           <Socials />
         </div>
-        <div className="flex flex-col px-32">
+        <div className="flex flex-col gap-32 px-20 md:px-48 pt-32">
           <LandingHeader />
           <About />
           <Projects />

@@ -5,7 +5,7 @@ import linkedinSolid from "../images/linkedin-brands.svg";
 
 const Socials = () => {
   return (
-    <div className="ml-3 hidden md:flex flex-col bg-transparent text-base text-violet-200 ">
+    <div className="ml-3 flex flex-col bg-transparent text-base text-violet-200 ">
       <button className="my-3 hover:animate-pulse hover:text-pink-500 hover:-translate-y-1 transition duration-150 ease-out  hover:ease-in">
         <a href="https://github.com/SusieValdez" target="_blank">
           <img

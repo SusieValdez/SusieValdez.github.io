@@ -1,19 +1,29 @@
 import React from "react";
+import arrowRight from "../images/arrow-right-solid.svg";
 
 const LandingHeader = () => {
   return (
     <div>
-      <h3 className="text-lg text-pink-300 font-mono">Hey! My name is</h3>
-      <div>
-        <h1 className="text-4xl text-violet-100 font-bold mb-3 md:text-5xl">
+      <div className="leading-loose md:w-2/3">
+        <h3 className="text-xl text-pink-300 font-mono">Hey! My name is</h3>
+        <h1 className="text-4xl text-violet-100 font-bold mb-3 md:text-6xl">
           Susie Valdez.
         </h1>
-        <h2 className="text-3xl text-violet-200 font-bold mb-3 w-2/3 md:text-4xl">
-          I am a doctor and programmer.
-        </h2>
+        <h1 className="text-4xl text-violet-200 font-bold mb-3 md:text-6xl">
+          Doctor
+          <img
+            className="w-8 h-8 inline mx-2 md:w-14 md:h-14"
+            src={arrowRight}
+            style={{
+              filter:
+                "invert(86%) sepia(28%) saturate(901%) hue-rotate(191deg) brightness(102%) contrast(102%)",
+            }}
+          />
+          Programmer.
+        </h1>
       </div>
 
-      <p className="text-violet-200 text-lg w-2/3">
+      <p className="text-violet-200 text-lg ">
         Medical Doctor turned Software Engineer. Web development is a true
         passion of mine and I enjoy every second of it.
       </p>

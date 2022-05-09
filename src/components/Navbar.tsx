@@ -3,7 +3,7 @@ import * as React from "react";
 const Navbar = () => {
   return (
     <div className="fixed w-full h-auto">
-      <div className="bg-gray-900/50 hidden items-center justify-between h-16 p-4 md:flex">
+      <div className="bg-gray-900/60 hidden items-center justify-between h-16 p-4 md:flex">
         <div className="text-slate-100 font-bold text-4xl pb-1 font-mono">
           &lt;S&gt;
         </div>
