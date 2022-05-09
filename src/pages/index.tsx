@@ -7,6 +7,8 @@ import Projects from "../components/Projects";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 import Socials from "../components/Socials";
+import MoreProjects from "../components/MoreProjects";
+import Footer from "../components/Footer";
 
 const IndexPage = () => {
   return (
@@ -20,10 +22,12 @@ const IndexPage = () => {
           <LandingHeader />
           <About />
           <Projects />
+          <MoreProjects />
           <Blog />
           <Contact />
         </div>
       </div>
+      <Footer />
     </main>
   );
 };
