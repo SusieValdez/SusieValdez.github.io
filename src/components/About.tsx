@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div>
       <h3 className="text-2xl font-bold text-pink-300 mb-3"> About Me </h3>
-      <div className="flex flex-col place-items-center md:flex-row md:justify-between gap-4">
-        <div className="bg-gray-800 rounded-3xl p-4 md:w-1/2">
+      <div className="flex flex-col place-items-center md:flex-row md:justify-between gap-2">
+        <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-3xl w-auto p-4 lg:w-1/2">
           <p className="text-violet-200 text-lg pb-3">
             Hello! My name is Susie and I love creating code. My passion for it
             began during the pandemic when I was trying to make videogames for
@@ -50,7 +50,7 @@ const About = () => {
             <li>Databases: SQL+NOSQL</li>
           </ul>
         </div>
-        <div className="w-2/3 bg-gray-800 rounded-full md:w-2/6 md:place-self-center md:justify-self-center">
+        <div className="hidden bg-gradient-to-br from-gray-800 to-gray-700 rounded-full lg:w-1/3 lg:flex lg:place-self-center lg:justify-self-center lg:ml-20">
           <img
             className="rounded-full"
             src={profilePic}

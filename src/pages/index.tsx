@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 import Socials from "../components/Socials";
-import MoreProjects from "../components/MoreProjects";
+import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 
 const IndexPage = () => {
@@ -22,7 +22,7 @@ const IndexPage = () => {
           <LandingHeader />
           <About />
           <Projects />
-          <MoreProjects />
+          <Skills />
           <Blog />
           <Contact />
         </div>

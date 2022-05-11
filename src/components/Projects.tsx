@@ -2,207 +2,166 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
-      <h3 className="text-lg text-pink-300 font-mono"> My projects</h3>
+    <div className="mx-auto">
+      <h3 className="text-2xl font-bold text-pink-300 mb-3">My Projects</h3>
+      <div className="flex flex-wrap -m-4">
+        <div className="p-4 md:w-1/3">
+          <div className="h-full rounded-xl shadow-cla-blue bg-gradient-to-br from-gray-800 to-gray-700 overflow-hidden">
+            <img
+              className="lg:h-48 md:h-36 w-full"
+              src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+              alt="blog"
+            />
+            <div className="p-6">
+              <h2 className="tracking-widest text-xs title-font font-medium text-gray-900 mb-1">
+                <div className="flex flex-wrap gap-1">
+                  <span className="bg-brands-react rounded-full px-3 py-1">
+                    React
+                  </span>
+                  <span className="bg-brands-js rounded-full px-3 py-1">
+                    JS
+                  </span>
+                  <span className="bg-brands-node rounded-full px-3 py-1">
+                    Node
+                  </span>
+                  <span className="bg-brands-ws rounded-full px-3 py-1">
+                    Websockets
+                  </span>
+                  <span className="bg-brands-db rounded-full px-3 py-1">
+                    MongoDB
+                  </span>
+                </div>
+              </h2>
+              <h1 className="title-font text-lg font-medium text-pink-300 mb-3">
+                Discuss
+              </h1>
+              <p className="leading-relaxed mb-3 text-violet-200">
+                Complete discord clone. Features: multiple servers and channels,
+                real-time communication between users,secure log-in using email
+                and password/QR code, link highlighting and expanded images,
+                user profiles and online-status, user roles, admin/moderator
+                roles.
+              </p>
+              <div className="flex items-center flex-wrap gap-4">
+                <button className="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white hover:ring-4 active:outline-none focus:ring-purple-300">
+                  <span className="px-5 transition-all ease-in duration-75 bg-white dark:bg-transparent rounded-md group-hover:bg-opacity-0">
+                    Source code
+                  </span>
+                </button>
 
-      <div className="row-auto gap-2 grid grid-cols-1 md:grid-cols-3">
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
+                <button className="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white hover:ring-4 active:outline-none focus:ring-purple-300">
+                  <span className="px-5 transition-all ease-in duration-75 bg-white dark:bg-transparent rounded-md group-hover:bg-opacity-0">
+                    Demo
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div className="p-4 md:w-1/3">
+          <div className="h-full rounded-xl shadow-cla-blue bg-gradient-to-br from-gray-800 to-gray-700 overflow-hidden">
+            <img
+              className="lg:h-48 md:h-36 w-full"
+              src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+              alt="blog"
+            />
+            <div className="p-6">
+              <h2 className="tracking-widest text-xs title-font font-medium text-gray-900 mb-1">
+                <div className="flex flex-wrap gap-1">
+                  <span className="bg-brands-react rounded-full px-3 py-1">
+                    React
+                  </span>
+                  <span className="bg-brands-js rounded-full px-3 py-1">
+                    JS
+                  </span>
+                  <span className="bg-brands-node rounded-full px-3 py-1">
+                    Node
+                  </span>
+                  <span className="bg-brands-ws rounded-full px-3 py-1">
+                    Websockets
+                  </span>
+                  <span className="bg-brands-db rounded-full px-3 py-1">
+                    MongoDB
+                  </span>
+                </div>
+              </h2>
+              <h1 className="title-font text-lg font-medium text-pink-300 mb-3">
+                Discuss
+              </h1>
+              <p className="leading-relaxed mb-3 text-violet-200">
+                Complete discord clone. Features: multiple servers and channels,
+                real-time communication between users,secure log-in using email
+                and password/QR code, link highlighting and expanded images,
+                user profiles and online-status, user roles, admin/moderator
+                roles.
+              </p>
+              <div className="flex items-center flex-wrap gap-4">
+                <button className="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white hover:ring-4 active:outline-none focus:ring-purple-300">
+                  <span className="px-5 transition-all ease-in duration-75 bg-white dark:bg-transparent rounded-md group-hover:bg-opacity-0">
+                    Source code
+                  </span>
+                </button>
 
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
+                <button className="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white hover:ring-4 active:outline-none focus:ring-purple-300">
+                  <span className="px-5 transition-all ease-in duration-75 bg-white dark:bg-transparent rounded-md group-hover:bg-opacity-0">
+                    Demo
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <div className="p-4 md:w-1/3">
+          <div className="h-full rounded-xl shadow-cla-blue bg-gradient-to-br from-gray-800 to-gray-700 overflow-hidden">
+            <img
+              className="lg:h-48 md:h-36 w-full"
+              src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+              alt="blog"
+            />
+            <div className="p-6">
+              <h2 className="tracking-widest text-xs title-font font-medium text-gray-900 mb-1">
+                <div className="flex flex-wrap gap-1">
+                  <span className="bg-brands-react rounded-full px-3 py-1">
+                    React
+                  </span>
+                  <span className="bg-brands-js rounded-full px-3 py-1">
+                    JS
+                  </span>
+                  <span className="bg-brands-node rounded-full px-3 py-1">
+                    Node
+                  </span>
+                  <span className="bg-brands-ws rounded-full px-3 py-1">
+                    Websockets
+                  </span>
+                  <span className="bg-brands-db rounded-full px-3 py-1">
+                    MongoDB
+                  </span>
+                </div>
+              </h2>
+              <h1 className="title-font text-lg font-medium text-pink-300 mb-3">
+                Discuss
+              </h1>
+              <p className="leading-relaxed mb-3 text-violet-200">
+                Complete discord clone. Features: multiple servers and channels,
+                real-time communication between users,secure log-in using email
+                and password/QR code, link highlighting and expanded images,
+                user profiles and online-status, user roles, admin/moderator
+                roles.
+              </p>
+              <div className="flex items-center flex-wrap gap-4">
+                <button className="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white hover:ring-4 active:outline-none focus:ring-purple-300">
+                  <span className="px-5 transition-all ease-in duration-75 bg-white dark:bg-transparent rounded-md group-hover:bg-opacity-0">
+                    Source code
+                  </span>
+                </button>
 
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
-          </div>
-        </div>
-
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
-          </div>
-        </div>
-
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
-          </div>
-        </div>
-
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
-          </div>
-        </div>
-
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
-          </div>
-        </div>
-
-        <div className="h-64 flex flex-col justify-between bg-slate-400 rounded-xl">
-          <div className="bg-white rounded-t-xl h-1/2"></div>
-          <div className="flex flex-col overflow-hidden p-2">
-            <h2 className="truncate ">Github Repo Name</h2>
-            <p className="truncate">
-              Repo Description: Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div className="self-end pb-3 px-3">
-            <button className="w-fit px-1 mx-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Demo
-            </button>
-            <button className="w-fit px-1 bg-pink-400 rounded-2xl hover:bg-pink-500 hover:ring-2 hover:ring-pink-100">
-              Check the Code
-            </button>
+                <button className="inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white hover:ring-4 active:outline-none focus:ring-purple-300">
+                  <span className="px-5 transition-all ease-in duration-75 bg-white dark:bg-transparent rounded-md group-hover:bg-opacity-0">
+                    Demo
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
