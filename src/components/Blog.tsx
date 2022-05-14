@@ -3,17 +3,16 @@ import briefcaseSolid from "../images/briefcase-medical-solid.svg";
 
 const About = () => {
   return (
-    <div className="w-2/3 md:w-fit">
+    <div id="blog" className="hidden pt-16 w-2/3 md:w-fit">
       <h3 className="text-2xl font-bold text-pink-300 mb-3">
         My Recent Blog Posts
       </h3>
 
       <ol className="border-l border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             February 2022
-          </time>
+          </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             Application UI code in Tailwind CSS
           </h3>
@@ -29,10 +28,9 @@ const About = () => {
           </a>
         </li>
         <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             March 2022
-          </time>
+          </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             Marketing UI design in Figma
           </h3>
@@ -49,10 +47,9 @@ const About = () => {
           </a>
         </li>
         <li className="ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             April 2022
-          </time>
+          </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             E-Commerce UI code in Tailwind CSS
           </h3>
