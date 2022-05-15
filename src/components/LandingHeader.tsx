@@ -4,9 +4,9 @@ import arrowRight from "../images/arrow-right-solid.svg";
 const LandingHeader = () => {
   return (
     <div>
-      <h3 className="text-xl text-pink-300 font-mono">Hey! My name is</h3>
-      <h1 className="text-violet-100 font-bold mb-3 text-4xl sm:text-6xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl">
-        Susie Valdez 💜
+      <h3 className="text-2xl text-pink-300 font-bold">Hey! My name is</h3>
+      <h1 className="text-violet-100 font-bold mb-3 text-4xl sm:text-6xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl ">
+        Susie Valdez <span className="rainbow duration-300">💜</span>
       </h1>
       <h1 className="w-auto  text-violet-200 font-bold mb-3 text-2xl sm:text-5xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl">
         Doctor

@@ -61,7 +61,7 @@ const projects: ProjectCardProps[] = [
     description:
       "Web based Pokemon card collection and trading game. Supports user accounts, friend lists and login base rewards.",
     imgLink:
-      "https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Pok%C3%A9mon_GO_logo.svg/1200px-Pok%C3%A9mon_GO_logo.svg.png",
     skills: ["TypeScript", "React", "Golang", "Databases"],
     codeLink: "https://github.com/SusieValdez/gokemon",
   },
@@ -96,8 +96,7 @@ const projects: ProjectCardProps[] = [
     title: "DIY-Lang",
     description:
       "A turing complete functional programming language. Wrote a parser, evaluater and REPL. Supports extending its standard library in it's own language.",
-    imgLink:
-      "https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png",
+    imgLink: "https://imgs.xkcd.com/comics/lisp.jpg",
     skills: ["Python"],
     codeLink: "https://github.com/SusieValdez/diy-lang",
   },
@@ -115,7 +114,7 @@ const projects: ProjectCardProps[] = [
     description:
       "E-commerce website using React and TS. Features display of products, location of shops.",
     imgLink:
-      "https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png",
+      "https://americasmi.com/wp-content/uploads/2019/11/mexico-e-commerce-market-research-data-2019.jpg",
     skills: ["TypeScript", "React"],
     codeLink: "https://github.com/SusieValdez/e-commerce-platform",
   },
@@ -125,7 +124,7 @@ const About = () => {
   return (
     <div id="projects" className="pt-16">
       <h3 className="text-2xl font-bold text-pink-300 mb-3">My Projects</h3>
-      <div className="flex flex-wrap gap-6 lg:gap-12 justify-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
         {projects.map((project) => (
           <Card {...project} />
         ))}
